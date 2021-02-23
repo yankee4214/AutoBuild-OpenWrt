@@ -73,7 +73,7 @@ jobs:
         ./scripts/feeds install -a
     - name: Configuration Customization - hiwifi1s-hc5661
       env:
-        CONFIG_FILE: 'hiwifi1s-hc5661'
+        CONFIG_FILE: 'hiwifi1s-hc5661.config'
       run: |
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x ./customize.sh && ./customize.sh
